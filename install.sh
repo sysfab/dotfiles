@@ -17,6 +17,7 @@ echo "Installing hyprland..."
 sudo pacman -S hyprland --noconfirm
 
 echo "Applying config..."
+mkdir -p ~/.config/hypr
 mv $HOME/dotfiles/install/hyprland-install.conf $HOME/.config/hypr/hyprland.conf
 
 echo "Installing hyprpaper, waybar, wofi, hyprshot, wlogout..."
