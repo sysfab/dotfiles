@@ -1,4 +1,4 @@
-echo "This script is meant to be used of fresh empty arch installation!"
+echo "This script is meant to be used on fresh empty arch installation!"
 echo "Instaling in 3 seconds..."
 sleep 3
 
