@@ -9,3 +9,9 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ~/dotfiles
+echo "Installing hyprland..."
+sudo pacman -S hyprland --noconfirm
+echo "Applying config..."
+mv ~/dotfiles/install/hyprland.conf ~/.config/hypr/hyprland.conf
+echo "Installing hyprpaper, waybar, wofi, wlogout..."
+sudo pacman -S hyprpaper waybar wofi wlogout
