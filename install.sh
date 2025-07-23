@@ -2,6 +2,9 @@ echo "This script is meant to be used on fresh empty arch installation!"
 echo "Instaling in 3 seconds..."
 sleep 3
 
+echo "Enabling multilib..."
+bash $HOME/dotfiles/install/enable_multilib.sh
+
 echo "Updating packages..."
 sudo pacman -Syu --noconfirm
 
@@ -12,6 +15,9 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd $HOME/dotfiles
+
+echo "Installing nano..."
+sudo pacman -S nano --noconfirm
 
 echo "Installing hyprland..."
 sudo pacman -S hyprland --noconfirm
@@ -26,6 +32,9 @@ sudo pacman -S otf-font-awesome --noconfirm
 
 echo "Installing kitty..."
 sudo pacman -S kitty --noconfirm
+
+echo "Installing hyprpaper..."
+sudo pacman -S hyprpaper --noconfirm
 
 echo "Launching visual install..."
 Hyprland
