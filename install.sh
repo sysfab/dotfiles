@@ -33,10 +33,10 @@ sudo pacman -S pulseaudio --noconfirm
 
 echo "Installing apps..."
 sudo pacman -S kitty nautilus --noconfirm
-yay -S google-chrome --noconfirm
+#yay -S google-chrome --noconfirm
 
 echo "Installing scrcpy..."
-sudo pacman -S scrcpy --noconfirm
+#sudo pacman -S scrcpy --noconfirm
 
 echo "Installing coppwr..."
 # yay -S coppwr --noconfirm
