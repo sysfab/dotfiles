@@ -11,17 +11,34 @@ cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-cd ~/dotfiles
+cd $HOME/dotfiles
 
 echo "Installing hyprland..."
 sudo pacman -S hyprland --noconfirm
 
 echo "Applying config..."
-mv ~/dotfiles/install/hyprland.conf ~/.config/hypr/hyprland.conf
+mv $HOME/dotfiles/install/hyprland.conf $HOME/.config/hypr/hyprland.conf
 
 echo "Installing hyprpaper, waybar, wofi, wlogout..."
 sudo pacman -S hyprpaper waybar wofi --noconfirm
 yay -S wlogout --noconfirm
 
+echo "Configuring hyprpaper..."
+bash $HOME/dotfiles/install/create_hyprpaper_config.sh
+
+echo "Installing fonts..."
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra --noconfirm
+sudo pacman -S otf-font-awesome --noconfirm
+
 echo "Installing pulseaudio..."
 sudo pacman -S pulseaudio --noconfirm
+
+echo "Installing apps..."
+sudo pacman -S kitty nautilus --noconfirm
+yay -S google-chrome --noconfirm
+
+echo "Installing scrcpy..."
+sudo pacman -S scrcpy --noconfirm
+
+echo "Installing coppwr..."
+yay -S coppwr --noconfirm
