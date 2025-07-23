@@ -3,7 +3,7 @@ echo "Instaling in 3 seconds..."
 sleep 3
 
 echo "Enabling multilib..."
-bash $HOME/dotfiles/install/enable_multilib.sh
+sudo bash $HOME/dotfiles/install/enable_multilib.sh
 
 echo "Updating packages..."
 sudo pacman -Syu --noconfirm
@@ -32,9 +32,6 @@ sudo pacman -S otf-font-awesome --noconfirm
 
 echo "Installing kitty..."
 sudo pacman -S kitty --noconfirm
-
-echo "Installing hyprpaper..."
-sudo pacman -S hyprpaper --noconfirm
 
 echo "Launching visual install..."
 Hyprland
