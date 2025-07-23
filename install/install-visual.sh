@@ -1,3 +1,6 @@
+echo "Please wait..."
+sleep 10
+
 echo "Configuring hyprland monitors..."
 bash $HOME/dotfiles/install/create_monitors_config.sh
 
