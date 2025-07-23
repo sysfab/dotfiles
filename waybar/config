@@ -1,0 +1,46 @@
+{
+	"layer": "top",
+
+	"margin-top": 8,
+	"margin-bottom": 0,
+	"margin-left": 0,
+	"margin-right":  0,
+	"spacing": 0,
+
+	"height": 32,
+	
+	"include": ["~/dotfiles/waybar/modules.json"],
+
+	"clock": {
+		"format": "{:%H:%M:%S}",
+		"format-alt": "{:%A, %B %d, %Y}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"interval": 1
+	},
+
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "🇺🇸",
+		"format-uk": "🇺🇦"
+	},
+	
+	"tray": {
+		"spacing": 10,
+		"show-passive-items": true
+	},
+
+
+	"modules-left": [
+		"clock",
+		"hyprland/language"
+	],
+
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+
+	"modules-right": [
+		"tray",
+		"custom/power"
+	]
+}

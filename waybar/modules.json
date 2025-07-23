@@ -1,0 +1,18 @@
+{
+	"custom/power": {
+		"format": "",
+        	"tooltip": "false",
+        	"on-click": "exec bash ~/dotfiles/wlogout/launch.sh",
+        	"interval": "once"
+	},
+
+	"hyprland/workspaces": {
+		"on-click": "activate",
+		"active-only": false,
+		"all-outputs": true,
+	},
+
+	"clock": {
+		"format-alt": "{:%Y-%m-%d}"
+	}
+}

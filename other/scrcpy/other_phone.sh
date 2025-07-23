@@ -1,0 +1,1 @@
+scrcpy -s HURSG6WSKB9T6XHI

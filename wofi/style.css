@@ -1,0 +1,27 @@
+* {
+	border-radius: 10px;
+	border: none;
+}
+
+window {
+	font-size: 18px;
+	font-family: "Inter";
+	background-color: rgba(30, 30, 30, 0.75);
+	color: white;
+}
+
+#entry {
+	padding: 0.5em;
+}
+
+#entry:selected {
+	background-color: #ff3377;
+	color: white;
+}
+
+#input {
+	background-color: rgba(10, 10, 10, 0.9);
+	color:white;
+
+	padding: 0.5em;
+}
