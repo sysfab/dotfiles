@@ -12,13 +12,15 @@ echo "Installing hyprpaper, waybar, wofi, hyprshot, wlogout..."
 sudo pacman -S hyprpaper waybar wofi hyprshot --noconfirm
 yay -S wlogout --noconfirm
 
-echo "Installing xdg-desktop-portal-hyprland..."
+echo "Installing xdg-desktop-portal, xdg-desktop-portal-hyprland..."
+sudo pacman -S xdg-desktop-portal --noconfirm
 sudo pacman -S xdg-desktop-portal-hyprland --noconfirm
 
 echo "Installing apps..."
 sudo pacman -S nautilus --noconfirm
 yay -S nautilus-open-any-terminal --noconfirm
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
+xdg-mime default org.gnome.Nautilus.desktop inode/directory application/x-gnome-saved-search
 yay -S google-chrome --noconfirm
 
 echo "Installing scrcpy..."
