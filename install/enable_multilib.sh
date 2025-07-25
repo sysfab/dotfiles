@@ -11,7 +11,8 @@ echo "Checking for Multilib repository in $PACMAN_CONF..."
 
 if grep -q "^\s*#\s*\[multilib\]" "$PACMAN_CONF"; then
     echo "Multilib repository found but commented out. Uncommenting..."
-    sed -i '/#\[multilib\]/{n;s/^#//;P;D;};s/^#\[multilib\]/\[multilib]/' "$PACMAN_CONF"
+    sed -i 's/^#\[multilib\]/\[multilib\]/' "$PACMAN_CONF"
+    sed -i '/^\[multilib\]/{n;s/^#//}' "$PACMAN_CONF"
     echo "Multilib repository uncommented."
 elif grep -q "^\s*\[multilib\]" "$PACMAN_CONF"; then
     echo "Multilib repository is already enabled."
@@ -25,4 +26,3 @@ echo "Updating Pacman repositories..."
 pacman -Sy
 
 echo "Multilib has been enabled (or was already enabled) and Pacman repositories updated."
-echo "You can now install multilib packages, for example: pacman -S lib32-mesa"
