@@ -1,14 +1,32 @@
 {
-	"custom/power": {
-		"format": "",
-        	"tooltip": "false",
-        	"on-click": "exec bash ~/dotfiles/wlogout/launch.sh",
-        	"interval": "once"
+	"clock": {
+		"format": "{:%H:%M:%S}",
+		"format-alt": "{:%A, %B %d, %Y}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"interval": 1
 	},
 
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "🇺🇸",
+		"format-uk": "🇺🇦"
+	},
+	
 	"hyprland/workspaces": {
 		"on-click": "activate",
 		"active-only": false,
-		"all-outputs": true,
+		"all-outputs": true
 	},
+
+	"tray": {
+		"spacing": 10,
+		"show-passive-items": true
+	},
+
+	"custom/power": {
+		"format": "",
+		"tooltip": "false",
+		"on-click": "exec bash ~/dotfiles/wlogout/launch.sh",
+		"interval": "once"
+	}
 }

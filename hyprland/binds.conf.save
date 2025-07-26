@@ -1,4 +1,7 @@
-$mainMod = SUPER 
+]$mainMod = SUPER
+
+bind = $mainMod, Z, exec, bash ~/disableinter/disable.sh
+bind = $mainMod, X, exec, bash ~/disableinter/enable.sh
 
 bind = $mainMod, Q, exec, $terminal
 bind = $mainMod, C, killactive,

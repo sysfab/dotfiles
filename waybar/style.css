@@ -1,6 +1,5 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Inter Mono, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -47,14 +46,23 @@ button:hover {
 #custom-power {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0 16px;
-    margin: 0 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#custom-notification {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 16px;
+    margin-left: 5px;
+    margin-right: 0px;
     border-radius: 10px;
 }
 
 #tray {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0 12px;
-    margin: 0 0px;
+    margin: 0 5px;
     border-radius: 10px;
 }
 

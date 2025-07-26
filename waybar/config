@@ -11,25 +11,6 @@
 	
 	"include": ["~/dotfiles/waybar/modules.json"],
 
-	"clock": {
-		"format": "{:%H:%M:%S}",
-		"format-alt": "{:%A, %B %d, %Y}",
-		"tooltip-format": "<tt><small>{calendar}</small></tt>",
-		"interval": 1
-	},
-
-	"hyprland/language": {
-		"format": "{}",
-		"format-en": "🇺🇸",
-		"format-uk": "🇺🇦"
-	},
-	
-	"tray": {
-		"spacing": 10,
-		"show-passive-items": true
-	},
-
-
 	"modules-left": [
 		"clock",
 		"hyprland/language"
