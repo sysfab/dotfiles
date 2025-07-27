@@ -1,0 +1,46 @@
+{
+	"positionX": "right",
+	"positionY": "top",
+
+	"layer": "overlay",
+
+	"timeout": 10,
+	"timeout-low": 5,
+	"timeout-critical": 0,
+
+	"notification-window-width": 500,
+
+	"notification-grouping": false,
+
+	"keyboard-shortcuts": false,
+
+	"image-visibility": "when-available",
+
+	"transition-time": 200,
+	"script-fail-notify": true,
+
+	"widgets": [
+		"title",
+		"dnd",
+		"mpris",
+		"notifications"
+	],
+	"widget-config": {
+		"title": {
+			"text": "Notifications",
+			"clear-all-button": true,
+			"button-text": "Clear All"
+		},
+		"dnd": {
+			"text": "Do Not Disturb"
+		},
+		"label": {
+			"max-lines": 5,
+			"text": "Label Text"
+		},
+		"mpris": {
+			"image-size": 96,
+			"image-radius": 12
+		}
+	}
+}

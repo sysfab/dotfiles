@@ -23,6 +23,22 @@
 		"show-passive-items": true
 	},
 
+	"custom/notification": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "<span foreground='red'><sup>●</sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup>●</sup></span>",
+            "dnd-none": ""
+		},
+		"return-type": "json",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d",
+		"escape": true
+	},
+
 	"custom/power": {
 		"format": "",
 		"tooltip": "false",
