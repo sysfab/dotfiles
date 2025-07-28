@@ -39,6 +39,9 @@ echo "Setting up hyprland start on login..."
 sudo systemctl set-default multi-user.target
 sudo mv $HOME/dotfiles/install/.bash_profile $HOME/.bash_profile
 
+echo "Applying .bashrc..."
+sudo mv $HOME/dotfiles/install/.bashrc $HOME/.bashrc
+
 echo "Applying default config..."
 mv $HOME/dotfiles/install/hyprland-final.conf $HOME/.config/hypr/hyprland.conf
 
