@@ -1,9 +1,8 @@
 .control-center {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     margin: 10px; /* Margin from screen edges */
     padding: 14px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
 .notification {
