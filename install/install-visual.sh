@@ -8,8 +8,8 @@ systemctl --user enable pipewire.socket pipewire-pulse.socket wireplumber.servic
 echo "Installing pavucontrol..."
 sudo pacman -S pavucontrol --noconfirm
 
-echo "Installing hyprpaper, waybar, wofi, hyprshot, wlogout, swaync..."
-sudo pacman -S hyprpaper waybar wofi hyprshot swaync --noconfirm
+echo "Installing hyprpaper, waybar, wofi, hyprshot, hyprpicker, wlogout, swaync..."
+sudo pacman -S hyprpaper waybar wofi hyprshot hyprpicker swaync --noconfirm
 yay -S wlogout --noconfirm
 
 echo "Installing appimagelauncher..."
